@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+    <link rel="shortcut icon" href="imagens/foguete.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="js/forca.js" defer></script>
+    <script src="js/jogo.js" defer></script>
+    <script src="js/funcoes_padroes.js" defer></script>
+    
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <p><a href="https://www.alura.com.br/"  target="_blank"><img class ="logo"src="imagens/logo.png" alt="logo-alura" > </a></p>
+        
+    </header>
+    <main>
+        
+        <section class="inicio">
+
+            <input id="comecar" class="botoes" type="button" value="Iniciar Jogo">
+            <input id="adicionar-palavra" class="botoes"  type="button" value="Adicionar nova palavra">
+
+        </section>
+
+        <section class="desenho-forca" >
+            
+        
+            <canvas id = "espaco-desenho" width="700" height="350"></canvas>
+                
+
+            <div class="resultado"></div>
+
+            <div class="letras-certas"></div>
+                
+            <div class="letras-erradas"></div>
+            
+        </section>
+
+        <section class = "nova-palavra">
+                
+            <div><input type="text" id="input-palavra" class="input-palavra-nova" autocomplete="off"></div>
+            <input type="button" id="salvar" class = "botoes" value="Salvar e Começar">
+            <input type="button" id = "cancelar" classe = "botoes" value="Cancelar">
+            
+        </section>
+         
+         <section class="botoes-finais">
+            
+            <input type="button" id = "novo-jogo" class = botoes value="Novo Jogo">
+           <input id="desistir" class = botoes type="button" value="Desistir">
+
+        </section>
+
+    </main>
+    <footer id="autor">
+
+        <p class="rodape">Desenvolvido por Larissa Olimpio</p>
+        <p id ="github"class="rodape"><a href="https://github.com/LarissaOlimpio" target="_blank" rel="externo"><img src="imagens/logo-git_menor.png" alt="ícone do github"></a></p>
+
+    </footer>
+</body>
+</html>
