@@ -26,7 +26,6 @@ var btnDesistir = document.querySelector("#desistir");
 segredo = ["desafio","alura","trabalho","cultura","escola","projeto","sistema","pesquisa","curso","jogos"];
 var totalSegredos = segredo.length;
 var palavraSecreta = segredo[Math.floor(Math.random()*totalSegredos)];
-console.log(palavraSecreta);
 
 var letrasCertas = [];
 var letrasErradas = [];
