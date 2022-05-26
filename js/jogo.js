@@ -23,7 +23,7 @@ var botaoReiniciar = document.querySelector("#novo-jogo");
 var btnDesistir = document.querySelector("#desistir");
 
 //sorteando a palavra secreta
-segredo = ["desafio","alura","trabalho","cultura","escola","projeto","foco","pesquisa","curso","jogos"];
+segredo = ["desafio","alura","trabalho","cultura","escola","projeto","sistema","pesquisa","curso","jogos"];
 var totalSegredos = segredo.length;
 var palavraSecreta = segredo[Math.floor(Math.random()*totalSegredos)];
 console.log(palavraSecreta);
@@ -53,6 +53,7 @@ function atualizarTela(){
     verificaJogo();
  
 }
+//Colocando os traços embaixo das letras
 function tracejar(tamanho){
     for(var i = 0; i < tamanho; i++){
         divLetraCerta.innerHTML += ' _ ';
@@ -76,20 +77,32 @@ function mostrarLetrasCertas(){
 }
 function verificaJogo(){
     
-    if (letrasErradas.length == 6 && letrasErradas.length < 7){
-        mensagem = ("GAME OVER!" + "<br>" + "Você perdeu!")
+    if (letrasErradas.length == 6 && letrasErradas.length < 7 && mensagem.length < 1){
+        mensagem = ("GAME OVER!" + "<br>" + "Você perdeu!"+ "<br>" + "A palavra secreta era: " + palavraSecreta)
         passandoResultado(mensagem);
         resultadoJogo.style.color = 'orange';
+        travarTeclado(mensagem);
     }
-    if (palavraSecreta.toUpperCase() == divLetraCerta.innerText){
+    if (palavraSecreta.toUpperCase() == divLetraCerta.innerText && mensagem.length < 1){
         mensagem = "Parabéns!!" + "<br>" + "Você ganhou!!";
         passandoResultado(mensagem);
         resultadoJogo.style.color = 'green';
+        travarTeclado(mensagem);
     }
 }
+//passando o resultado para o HTMl
 function passandoResultado(mensagem){
     resultadoJogo.innerHTML += mensagem;
 }
+// Faz com que o usuário não consiga digitar após perder ou ganhar
+function travarTeclado(mensagem){
+    if (mensagem.length>0){
+        document.addEventListener("keydown",function(e){
+            e.preventDefault();
+            e.stopPropagation();
+        })
 
+    }
+}
 
     
