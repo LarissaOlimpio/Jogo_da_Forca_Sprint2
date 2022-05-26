@@ -51,8 +51,3 @@ botaoReiniciar.addEventListener("click",function(){
     location.reload();
 
  });
-
-
- function comecar(){
-     
- }
