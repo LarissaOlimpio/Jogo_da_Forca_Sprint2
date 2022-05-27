@@ -37,7 +37,7 @@ body{
     margin-top: 10px;
     border-radius: 24px;
     height: 70px;
-    width: 358px;
+    width: 365px;
     box-sizing: border-box;
     transition: 0.5s;
     cursor: pointer;
@@ -46,6 +46,7 @@ body{
     margin-left: 200px;
 }
 .botoes:hover{
+    font-size: 35px;
 }
 #comecar{
     border-radius: 12px;
@@ -125,6 +126,10 @@ body{
     color: #495057;
     height: 70px;
     width: 358px;
+    transition: 0.5s;
+}
+#cancelar:hover{
+    font-size: 35px;
 }
 /*imagem do gitHub*/
 #github{ 
