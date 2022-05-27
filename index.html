@@ -14,9 +14,10 @@
     <script src="js/funcoes_padroes.js" defer></script>
     
     
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -49,7 +50,9 @@
 
         <section class = "nova-palavra">
                 
-            <div><input type="text" id="input-palavra" class="input-palavra-nova" autocomplete="off"></div>
+            <div><input type="text" id="input-palavra" class="input-palavra-nova" autocomplete="off" placeholder="Digite uma palavra"></div>
+            <img src="imagens/exclamacao.png" alt="ponto de exclamação" class="exclamacao">
+            <label id= "aviso" class="texto-aviso" for="text">Máx. 8 letras</label>
             <input type="button" id="salvar" class = "botoes" value="Salvar e Começar">
             <input type="button" id = "cancelar" classe = "botoes" value="Cancelar">
             

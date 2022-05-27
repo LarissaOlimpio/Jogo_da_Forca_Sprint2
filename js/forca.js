@@ -2,7 +2,7 @@ function desenhaPoste(){
     pincel.moveTo(400,10);
     pincel.lineTo(400,350);
     pincel.lineWidth = 10;
-    pincel.strokeStyle = "darkblue";
+    pincel.strokeStyle = "#0A3871";
 }
 function desenhaSuperiorPoste(){
     pincel.moveTo(400,10);
