@@ -72,6 +72,9 @@ body{
     box-sizing: border-box;
     position: absolute;
     font-size: 60px;
+    font-weight:normal;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .letras-certas{
     margin-top: 400px;

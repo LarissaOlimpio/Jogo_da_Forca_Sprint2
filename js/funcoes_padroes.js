@@ -5,19 +5,16 @@ btnComecar.addEventListener("click",function (){
     sBotoesFinais.classList.remove("ocultar");
     document.addEventListener("keypress",function(e){
         const letra= e.key;
-        const padrao = '[a-z ]';
-        if (!(letra.match(padrao))){
+        const padrao = '[a-z]';
+        if ((!(letra.match(padrao))) || (letra == "Enter")){
             e.preventDefault();
-    
-        }else {
-            if (letrasErradas.includes(letra)){
-                //alert("letra repetida");
-            }else if (palavraSecreta.includes(letra)){
-                letrasCertas.push(letra);
-            }else{
-                letrasErradas.push(letra);
-            }
-        }atualizarTela();
+
+        }else if (palavraSecreta.includes(letra)){
+            letrasCertas.push(letra);
+        }else if (!(letrasErradas.includes(letra))){
+            letrasErradas.push(letra);
+        }
+        atualizarTela();
     })
 })
 btnAdicionarPalavra.addEventListener("click",function(){
@@ -26,7 +23,6 @@ btnAdicionarPalavra.addEventListener("click",function(){
     sBotoesFinais.classList.add("ocultar");
     sNovaPalavra.classList.remove("ocultar");
     inputPalavra.focus();
-   
 })
 btnCancelar.addEventListener("click",function(){
     sDesenhoForca.classList.add("ocultar");
@@ -36,18 +32,21 @@ btnCancelar.addEventListener("click",function(){
 })
 btnSalvarPalavra.addEventListener("click",function(){
     valorPalavra = (inputPalavra.value).toLowerCase();
-    segredo.push(valorPalavra);
-    console.log(segredo);
-    console.log(valorPalavra);
-    sNovaPalavra.classList.add("ocultar");
-    sInicio.classList.add("ocultar");
-    sDesenhoForca.classList.remove("ocultar");
-    sBotoesFinais.classList.remove("ocultar");
+    if (valorPalavra.length > 8){
+        alert("Digite uma palavra de até 8 letras");
+    }else{
+        segredo.push(valorPalavra);
+        sNovaPalavra.classList.add("ocultar");
+        sInicio.classList.add("ocultar");
+        sDesenhoForca.classList.remove("ocultar");
+        sBotoesFinais.classList.remove("ocultar");
+    }
+   
 })
 btnDesistir.addEventListener("click",function(){
     location.reload();
 })
-botaoReiniciar.addEventListener("click",function(){
+btnReiniciar.addEventListener("click",function(){
     location.reload();
+});
 
- });

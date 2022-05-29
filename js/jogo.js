@@ -19,7 +19,7 @@ var btnCancelar  = document.querySelector("#cancelar");
 var valorPalavra = "";
 //pegando os elementos da section com a classe botões-finais
 var sBotoesFinais = document.querySelector('.botoes-finais');
-var botaoReiniciar = document.querySelector("#novo-jogo");
+var btnReiniciar = document.querySelector("#novo-jogo");
 var btnDesistir = document.querySelector("#desistir");
 
 //sorteando a palavra secreta
@@ -65,7 +65,7 @@ function mostrarLetrasErradas(){
     }
 }
 function mostrarLetrasCertas(){
-    divLetraCerta.innerHTML = "";
+    divLetraCerta.innerHTML = " ";
     palavraSecreta.split("").forEach(letra => {
         if (letrasCertas.includes(letra)){
             divLetraCerta.innerHTML += letra;
@@ -77,7 +77,7 @@ function mostrarLetrasCertas(){
 function verificaJogo(){
     
     if (letrasErradas.length == 6 && letrasErradas.length < 7 && mensagem.length < 1){
-        mensagem = ("GAME OVER!" + "<br>" + "Você perdeu!"+ "<br>" + "A palavra secreta era: " + palavraSecreta)
+        mensagem = ("GAME OVER!" + "<br>" + "Você perdeu!"+ "<br>" + "A palavra secreta era: " + palavraSecreta);
         passandoResultado(mensagem);
         resultadoJogo.style.color = 'orange';
         travarTeclado(mensagem);
