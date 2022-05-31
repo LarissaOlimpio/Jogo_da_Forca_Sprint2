@@ -95,7 +95,7 @@ function passandoResultado(mensagem){
 }
 // Faz com que o usuário não consiga digitar após perder ou ganhar
 function travarTeclado(mensagem){
-    if (mensagem.length>0){
+    if (mensagem.length == 0){
         document.addEventListener("keydown",function(e){
             e.preventDefault();
             e.stopPropagation();

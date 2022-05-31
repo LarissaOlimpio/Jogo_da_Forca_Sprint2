@@ -32,21 +32,42 @@ btnCancelar.addEventListener("click",function(){
 })
 btnSalvarPalavra.addEventListener("click",function(){
     valorPalavra = (inputPalavra.value).toLowerCase();
+    
     if (valorPalavra.length > 8){
         alert("Digite uma palavra de até 8 letras");
     }else{
         segredo.push(valorPalavra);
+        palavraSecreta = segredo[Math.floor(Math.random()*totalSegredos)];
         sNovaPalavra.classList.add("ocultar");
         sInicio.classList.add("ocultar");
         sDesenhoForca.classList.remove("ocultar");
         sBotoesFinais.classList.remove("ocultar");
+        
     }
-   
+    
 })
 btnDesistir.addEventListener("click",function(){
     location.reload();
 })
 btnReiniciar.addEventListener("click",function(){
-    location.reload();
+    limpaTela();
 });
+function limpaTela(){
+    mensagem = "";
+    console.log(mensagem);
+    palavraSecreta = segredo[Math.floor(Math.random()*totalSegredos)];
+    total = palavraSecreta.split("");
+    total = total.length;
+    divLetraCerta.innerHTML = " ";
+    divLetraErrada.innerHTML = " ";
+    resultadoJogo.innerHTML = "";
+    letrasCertas = [];
+    letrasErradas = [];
+    pincel.clearRect(500,35,700,300);
+    atualizarTela();
+    
+    console.log(palavraSecreta);
+    console.log(letrasErradas);
+    console.log(letrasCertas );
+}
 
