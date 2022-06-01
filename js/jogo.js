@@ -73,7 +73,7 @@ function tracejar(tamanho){
 function mostrarLetrasErradas(){
     divLetraErrada.innerHTML = " ";
     for(var i = 0; i<letrasErradas.length;i++){
-        divLetraErrada.innerHTML += letrasErradas[i].toUpperCase();
+        divLetraErrada.innerHTML += letrasErradas[i].toUpperCase() + " ";
     }
 }
 function mostrarLetrasCertas(){
