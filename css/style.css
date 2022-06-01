@@ -7,7 +7,6 @@
 }
 body{
     background: rgb(203, 222, 243)
-    
 }
 .main{
     display: flex;
@@ -83,7 +82,6 @@ body{
 .letras-erradas{
     margin-top: 500px;
 }
-
 #novo-jogo{
     margin-top: 630px;
     margin-left: 450px;
@@ -140,6 +138,7 @@ body{
     padding: 40px 330px;
     
 }
+/*rodape*/
 footer img{
     cursor: pointer;
     
@@ -151,6 +150,7 @@ footer p {
     font-weight: bold;
     color: #494242;
 }
+/*classe para ocultar os elementos*/
 .ocultar{
     transition: all 1s;
     display: none;
