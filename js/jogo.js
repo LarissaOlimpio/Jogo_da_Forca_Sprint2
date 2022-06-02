@@ -80,7 +80,7 @@ function mostrarLetrasCertas(){
     divLetraCerta.innerHTML = " ";
     palavraSecreta.split("").forEach(letra => {
         if (letrasCertas.includes(letra)){
-            divLetraCerta.innerHTML += letra + " ";
+            divLetraCerta.innerHTML += letra;
         }else{
             divLetraCerta.innerHTML += ' _ ';
         }

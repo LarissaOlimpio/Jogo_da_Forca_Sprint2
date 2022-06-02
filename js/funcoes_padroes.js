@@ -3,6 +3,7 @@ btnComecar.addEventListener("click",function (){
     sNovaPalavra.classList.add("ocultar");
     sDesenhoForca.classList.remove("ocultar");
     sBotoesFinais.classList.remove("ocultar");
+    limpaTela();
 })
 btnAdicionarPalavra.addEventListener("click",function(){
     sInicio.classList.add("ocultar");
