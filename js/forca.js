@@ -1,4 +1,6 @@
 function desenhaPoste(){
+    pincel.lineCap  = 'round';
+    pincel.lineJoin = 'round';
     pincel.moveTo(400,10);
     pincel.lineTo(400,350);
     pincel.lineWidth = 10;
