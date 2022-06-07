@@ -20,11 +20,8 @@ btnAdicionarPalavra.addEventListener("click",function(){
     })
 })
 btnCancelar.addEventListener("click",function(){
-    sDesenhoForca.classList.add("ocultar");
-    sBotoesFinais.classList.add("ocultar");
-    sNovaPalavra.classList.add("ocultar");
-    sInicio.classList.remove("ocultar");
-    limpaTela();
+    location.reload();
+    
 })
 btnSalvarPalavra.addEventListener("click",function(){
     valorPalavra = (inputPalavra.value).toLowerCase();
