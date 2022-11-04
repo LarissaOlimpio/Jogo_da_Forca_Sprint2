@@ -8,7 +8,7 @@ Jogo da forca, Challenge de iniciante em programação. Projeto One Next Educati
 | :rocket: URL         | https://larissaolimpio.github.io/Jogo_da_Forca_Sprint2/
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://github.com/LarissaOlimpio/Jogo_da_Forca_Sprint2/issues/1#issue-1436729384#vitrinedev)
+![forca](https://user-images.githubusercontent.com/50180854/200089955-5c9b7d32-4deb-4c61-84e8-f03e8eae6914.png#vitrinedev)
 
 
 
