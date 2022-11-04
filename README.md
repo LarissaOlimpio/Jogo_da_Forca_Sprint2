@@ -5,12 +5,11 @@ Jogo da forca, Challenge de iniciante em programação. Projeto One Next Educati
 | -------------  | --- |
 | :sparkles: Nome        | **Jogo da Forca**
 | :label: Tecnologias | JavaScript, html5, css3 (tecnologias utilizadas)
-| :rocket: URL         | https://url-deploy.com.br
-| :fire: Desafio     | https://url-do-desafio.com.br
+| :rocket: URL         | https://larissaolimpio.github.io/Jogo_da_Forca_Sprint2/
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+![](![forca]https://user-images.githubusercontent.com/50180854/200089394-5bc91c81-8c54-4aad-a7f8-0ac3c69f7064.png#vitrinedev)
 
 ## Detalhes do projeto
 
-Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
+
