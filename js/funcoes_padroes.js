@@ -19,7 +19,7 @@ btnAdicionarPalavra.addEventListener("click",function(){
         }
     })
 })
-btnCancelar.addEventListener("click",function(){
+btnCancelar.addEventListener("click",function(){ 
     location.reload();
     
 })

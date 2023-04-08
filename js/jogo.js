@@ -1,38 +1,38 @@
 //pegando os elementos  da section com a classe inicio
-var sInicio = document.querySelector(".inicio");
-var btnComecar = document.querySelector("#comecar");
-var btnAdicionarPalavra = document.querySelector("#adicionar-palavra");
+let sInicio = document.querySelector(".inicio");
+let btnComecar = document.querySelector("#comecar");
+let btnAdicionarPalavra = document.querySelector("#adicionar-palavra");
 
 //pegando do HTML os elementos da section com a classe desenho-forca para a lógica do jogo//
-var sDesenhoForca = document.querySelector('.desenho-forca');
-var tela = document.querySelector('canvas');
-var pincel = tela.getContext('2d');
-var divLetraCerta = document.querySelector(".letras-certas");
-var divtracinho = document.querySelector(".tracinho");
-var divLetraErrada = document.querySelector(".letras-erradas");
-var resultadoJogo = document.querySelector(".resultado");
+let sDesenhoForca = document.querySelector('.desenho-forca');
+let tela = document.querySelector('canvas');
+let pincel = tela.getContext('2d');
+let divLetraCerta = document.querySelector(".letras-certas");
+let divtracinho = document.querySelector(".tracinho");
+let divLetraErrada = document.querySelector(".letras-erradas");
+let resultadoJogo = document.querySelector(".resultado");
 
 //pegando os elementos da section com a classe nova-palavra
-var sNovaPalavra = document.querySelector('.nova-palavra');
-var inputPalavra = document.querySelector(".input-palavra-nova");
-var btnSalvarPalavra = document.querySelector("#salvar");
-var btnCancelar  = document.querySelector("#cancelar");
-var valorPalavra = "";
+let sNovaPalavra = document.querySelector('.nova-palavra');
+let inputPalavra = document.querySelector(".input-palavra-nova");
+let btnSalvarPalavra = document.querySelector("#salvar");
+let btnCancelar  = document.querySelector("#cancelar");
+let valorPalavra = "";
 //pegando os elementos da section com a classe botões-finais
-var sBotoesFinais = document.querySelector('.botoes-finais');
-var btnReiniciar = document.querySelector("#novo-jogo");
-var btnDesistir = document.querySelector("#desistir");
+let sBotoesFinais = document.querySelector('.botoes-finais');
+let btnReiniciar = document.querySelector("#novo-jogo");
+let btnDesistir = document.querySelector("#desistir");
 
 //sorteando a palavra secreta
 segredo = ["desafio","alura","trabalho","cultura","escola","projeto","sistema","pesquisa","curso","jogos"];
-var totalSegredos = segredo.length;
-var palavraSecreta = segredo[Math.floor(Math.random()*totalSegredos)];
+let totalSegredos = segredo.length;
+let palavraSecreta = segredo[Math.floor(Math.random()*totalSegredos)];
 
-var letrasCertas = [];
-var letrasErradas = [];
-var total = palavraSecreta.split("");
+let letrasCertas = [];
+let letrasErradas = [];
+let total = palavraSecreta.split("");
 total = total.length;
-var mensagem = "";
+let mensagem = "";
 
 sDesenhoForca.classList.add("ocultar");
 sNovaPalavra.classList.add("ocultar");
@@ -66,13 +66,13 @@ function atualizarTela(){
 }
 //Colocando os traços embaixo das letras
 function tracejar(tamanho){
-    for(var i = 0; i < tamanho; i++){
+    for(let i = 0; i < tamanho; i++){
         divLetraCerta.innerHTML += ' _ ';
     }
 }
 function mostrarLetrasErradas(){
     divLetraErrada.innerHTML = " ";
-    for(var i = 0; i<letrasErradas.length;i++){
+    for(let i = 0; i<letrasErradas.length;i++){
         divLetraErrada.innerHTML += letrasErradas[i].toUpperCase() + " ";
     }
 }

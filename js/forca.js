@@ -52,7 +52,7 @@ function desenhaPernaDir(){
     pincel.stroke();
 }
 function desenhaBoneco(){
-    for(var i = 0; i <= letrasErradas.length; i++){
+    for(let i = 0; i <= letrasErradas.length; i++){
         if (i == 1){
             desenhaCabeca();
         }if (i == 2){
