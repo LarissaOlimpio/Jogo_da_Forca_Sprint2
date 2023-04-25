@@ -38,7 +38,24 @@ body{
     transition: all 1s;
     display: none;
 }
+footer img{
+    cursor: pointer;
+    
+}
+footer p {
+    margin-top: 50px;
+    position:absolute;
+    padding: 60px 90px;
+    font-weight: bold;
+    color: #494242;
+}
 
+/*imagem do gitHub*/
+#github{ 
+    position: absolute;
+    padding: 40px 330px;
+   
+}
 @media (min-width:425px) {
     
 }
