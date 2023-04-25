@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Jogo da forca online e divertido para toda a família!"
     />
     <title>Jogo da forca</title>
-    <link rel="shortcut icon" href="imagens/foguete.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="imagens/foguete.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/iniciarJogo.css" />
+    <link rel="stylesheet" href="css/jogo.css" />
+    <link rel="stylesheet" href="css/adicionarPalavra.css" />
 
     <script src="js/forca.js" defer></script>
     <script src="js/jogo.js" defer></script>
     <script src="js/funcoes_padroes.js" defer></script>
-    
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        
-        <p><a href="https://www.alura.com.br/"  target="_blank"><img class ="logo"src="imagens/logo-alura.png" alt="logo-alura" > </a></p>
-        
+      <p>
+        <a href="https://www.alura.com.br/" target="_blank"
+          ><img class="logo" src="imagens/logo-alura.png" alt="logo-alura" />
+        </a>
+      </p>
     </header>
     <main>
-        
-        <section class="inicio">
+      <section class="inicio">
+        <input id="comecar" class="botoes" type="button" value="Iniciar Jogo" />
+        <input
+          id="adicionar-palavra"
+          class="botoes"
+          type="button"
+          value="Adicionar nova palavra"
+        />
+      </section>
 
-            <input id="comecar" class="botoes" type="button" value="Iniciar Jogo">
-            <input id="adicionar-palavra" class="botoes"  type="button" value="Adicionar nova palavra">
+      <section class="desenho-forca">
+        <canvas id="espaco-desenho" width="700" height="350"></canvas>
 
-        </section>
+        <div class="resultado"></div>
 
-        <section class="desenho-forca" >
-            
-        
-            <canvas id = "espaco-desenho" width="700" height="350"></canvas>
-                
+        <div class="letras-certas"></div>
 
-            <div class="resultado"></div>
+        <div class="letras-erradas"></div>
+      </section>
 
-            <div class="letras-certas"></div>
-                
-            <div class="letras-erradas"></div>
-            
-        </section>
+      <section class="nova-palavra">
+        <div>
+          <input
+            type="text"
+            id="input-palavra"
+            class="input-palavra-nova"
+            autocomplete="off"
+            placeholder="Digite uma palavra"
+          />
+        </div>
+        <img
+          src="imagens/exclamacao.png"
+          alt="ponto de exclamação"
+          class="exclamacao"
+        />
+        <label id="aviso" class="texto-aviso" for="text">Máx. 8 letras</label>
+        <input
+          type="button"
+          id="salvar"
+          class="botoes"
+          value="Salvar e Começar"
+        />
+        <input type="button" id="cancelar" classe="botoes" value="Cancelar" />
+      </section>
 
-        <section class = "nova-palavra">
-                
-            <div><input type="text" id="input-palavra" class="input-palavra-nova" autocomplete="off" placeholder="Digite uma palavra" ></div>
-            <img src="imagens/exclamacao.png" alt="ponto de exclamação" class="exclamacao">
-            <label id= "aviso" class="texto-aviso" for="text">Máx. 8 letras</label>
-            <input type="button" id="salvar" class = "botoes" value="Salvar e Começar">
-            <input type="button" id = "cancelar" classe = "botoes" value="Cancelar">
-            
-        </section>
-         
-         <section class="botoes-finais">
-            
-            <input type="button" id = "novo-jogo" class = botoes value="Novo Jogo">
-           <input id="desistir" class = botoes type="button" value="Desistir">
-
-        </section>
-
+      <section class="botoes-finais">
+        <input type="button" id="novo-jogo" class="botoes" value="Novo Jogo" />
+        <input id="desistir" class="botoes" type="button" value="Desistir" />
+      </section>
     </main>
     <footer id="autor">
-
-        <p class="rodape">Desenvolvido por Larissa Olimpio</p>
-        <p id ="github"class="rodape"><a href="https://github.com/LarissaOlimpio" target="_blank" rel="externo"><img src="imagens/logo-git_menor.png" alt="ícone do github"></a></p>
-
+      <p class="rodape">Desenvolvido por Larissa Olimpio</p>
+      <p id="github" class="rodape">
+        <a
+          href="https://github.com/LarissaOlimpio"
+          target="_blank"
+          rel="externo"
+          ><img src="imagens/logo-git_menor.png" alt="ícone do github"
+        /></a>
+      </p>
     </footer>
-</body>
+  </body>
 </html>

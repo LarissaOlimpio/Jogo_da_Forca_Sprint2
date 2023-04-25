@@ -1,0 +1,65 @@
+#novo-jogo{
+    margin-top: 630px;
+    margin-left: 450px;
+}
+#desistir{
+    margin-top: 630px;
+    margin-left: 100px;
+    background: #D8DFE8;
+    color: #495057;
+    border-radius: 30px;
+}
+
+#espaco-desenho{
+    margin-top: 20px;
+    margin-left: 350px;
+    display: block;
+    position: absolute;
+}
+.resultado{
+    font-size: 40px;
+    margin-top: 180px;
+    margin-left: 1100px;
+    position: absolute;
+    display: block;
+}
+
+.letras-certas, 
+.letras-erradas{
+    margin-left: 600px;
+    color: #0A3871;
+    padding: 35px;
+    position: absolute;
+    font-size: 60px;
+    font-weight:normal;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.letras-certas{
+    margin-top: 400px;
+    text-transform: uppercase;
+}
+.letras-erradas{
+    margin-top: 500px;
+}
+.input-palavra-nova{
+    background: none;
+    font-size: 40px;
+    color: #0A3871;
+    border: none;
+    margin-left: 550px;
+    margin-top: 150px;
+    outline: 0;
+}
+.texto-aviso{
+    position: absolute;
+    margin-left: 530px;
+    margin-top:  350px;
+    font-size: 20px;
+    color: #495057;
+}
+.exclamacao{
+    position: absolute;
+    margin-left: 510px;
+    margin-top:  367px;
+}

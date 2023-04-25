@@ -1,0 +1,25 @@
+#salvar{
+    margin-top: 400px;
+    margin-left: 500px;
+}
+#cancelar{
+    margin-top: 200px;
+    margin-left: 100px;
+    border-radius: 30px;
+    background: #D8DFE8;
+    color: #495057;
+    height: 70px;
+    width: 358px;
+    transition: 0.5s;
+}
+#cancelar:hover{
+    font-size: 35px;
+}
+#adicionar-palavra{
+    border-radius: 30px;
+    background: #D8DFE8;
+    color: #495057;
+    margin-left: 783px;
+    margin-top: 40px;
+    
+}

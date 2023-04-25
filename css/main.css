@@ -1,0 +1,50 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: bold;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(203, 222, 243)
+}
+.main{
+    display: flex;
+}
+.logo{
+    padding-top: 40px;
+    cursor: pointer;
+}
+.botoes{
+    text-decoration: none;
+    display:inline-block;
+    margin-top: 10px;
+    border-radius: 24px;
+    height: 70px;
+    width: 365px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #0A3871;
+    color: white;
+    margin-left: 200px;
+}
+.botoes:hover{
+    font-size: 35px;
+}
+
+/*classe para ocultar os elementos*/
+.ocultar{
+    transition: all 1s;
+    display: none;
+}
+
+@media (min-width:425px) {
+    
+}
+@media (min-width:768px) {
+    
+}
+@media (min-width:1200px) {
+    
+}
