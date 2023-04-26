@@ -11,13 +11,11 @@
     <title>Jogo da forca</title>
     <link rel="shortcut icon" href="imagens/foguete.ico" type="image/x-icon" />
 
-   
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/paginas/iniciarJogo.css" />
-    <link rel="stylesheet" href="css/paginas/jogo.css" />
-    <link rel="stylesheet" href="css/paginas/adicionarPalavra.css" />
+    <link rel="stylesheet" href="css/conteudo/adicionarPalavra.css" />
+    <link rel="stylesheet" href="css/conteudo/iniciarJogo.css" />
+    <link rel="stylesheet" href="css/conteudo/jogo.css" />
 
     <script src="js/forca.js" defer></script>
     <script src="js/jogo.js" defer></script>
@@ -29,7 +27,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,12 +35,10 @@
     />
   </head>
   <body>
-    <header>
-      <p>
-        <a href="https://www.alura.com.br/" target="_blank"
-          ><img class="logo" src="imagens/logo-alura.png" alt="logo-alura" />
-        </a>
-      </p>
+    <header class="header">
+      <a href="https://www.alura.com.br/" target="_blank"
+        ><img class="logo" src="imagens/logo-alura.png" alt="logo-alura" />
+      </a>
     </header>
     <main>
       <section class="inicio">
@@ -54,6 +49,7 @@
           type="button"
           value="Adicionar nova palavra"
         />
+ 
       </section>
 
       <section class="desenho-forca">
@@ -96,16 +92,17 @@
         <input id="desistir" class="botoes" type="button" value="Desistir" />
       </section>
     </main>
-    <footer id="autor">
-      <p class="rodape">Desenvolvido por Larissa Olimpio</p>
-      <p id="github" class="rodape">
-        <a
-          href="https://github.com/LarissaOlimpio"
-          target="_blank"
-          rel="externo"
-          ><img src="imagens/logo-git_menor.png" alt="ícone do github"
-        /></a>
-      </p>
+    <footer  class="footer" id="autor">
+      <div class="divFooter">
+        
+          <a
+            href="https://github.com/LarissaOlimpio"
+            target="_blank"
+            rel="externo"
+            ><img src="imagens/logo-git_menor.png" alt="ícone do github"
+          /></a>
+          <p>Desenvolvido por Larissa Olimpio</p>
+      </div>
     </footer>
   </body>
 </html>

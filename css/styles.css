@@ -1,67 +1,61 @@
-*{
-    font-family: 'Open Sans', sans-serif;
-    font-family: bold;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 150%;
-    box-sizing: border-box;
+* {
+  font-family: "Open Sans", sans-serif;
+  font-family: bold;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  box-sizing: border-box;
+  background: rgb(203, 222, 243);
 }
-body{
-    background: rgb(203, 222, 243)
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
 }
-.main{
-    display: flex;
+main {
+  width: 100vw;
+  height: 100vh;
 }
-.logo{
-    padding-top: 40px;
-    cursor: pointer;
+.botoes {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 24px;
+  height: 70px;
+  width: 365px;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #0a3871;
+  color: white;
 }
-.botoes{
-    text-decoration: none;
-    display:inline-block;
-    margin-top: 10px;
-    border-radius: 24px;
-    height: 70px;
-    width: 365px;
-    transition: 0.5s;
-    cursor: pointer;
-    background-color: #0A3871;
-    color: white;
-    margin-left: 200px;
-}
-.botoes:hover{
-    font-size: 35px;
+.botoes:hover {
+  font-size: 35px;
 }
 
 /*classe para ocultar os elementos*/
-.ocultar{
-    transition: all 1s;
-    display: none;
+.ocultar {
+  transition: all 1s;
+  display: none;
 }
-footer img{
-    cursor: pointer;
-    
+.footer img {
+  cursor: pointer;
 }
-footer p {
-    margin-top: 50px;
-    position:absolute;
-    padding: 60px 90px;
-    font-weight: bold;
-    color: #494242;
+.divFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-weight: bold;
+  color: #494242;
 }
-
-/*imagem do gitHub*/
-#github{ 
-    position: absolute;
-    padding: 40px 330px;
-   
+@media (min-width: 425px) {
 }
-@media (min-width:425px) {
-    
+@media (min-width: 768px) {
+  .divFooter {
+    justify-content: flex-start;
+  }
 }
-@media (min-width:768px) {
-    
-}
-@media (min-width:1200px) {
-    
+@media (min-width: 1200px) {
 }
