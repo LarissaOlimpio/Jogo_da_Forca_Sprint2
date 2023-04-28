@@ -1,61 +1,77 @@
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font);
   font-family: bold;
   font-weight: bold;
   font-size: 32px;
-  line-height: 150%;
   box-sizing: border-box;
-  background: rgb(203, 222, 243);
+  background: var(--backgroundAzul)
+}
+:root{
+  --font:"Open Sans", sans-serif;
+  --cinza: #494242;
+  --branco: white;
+  --backgroundAzul:rgb(203, 222, 243);
+  --backgroundBotao: #0a3871;
+}
+body,
+main {
+  max-width: 100vw;
+  max-height: 100vh;
 }
 .header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 2rem;
+  top: 0;
+  right: 0;
+  padding: 1.5rem 0 0 1.5rem;
   cursor: pointer;
-}
-main {
-  width: 100vw;
-  height: 100vh;
 }
 .botoes {
+  height: 60px;
+  width: 260px;
+  font-size: 1.3rem;
+  margin:  1rem 1rem 0 1rem;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
   border-radius: 24px;
-  height: 70px;
-  width: 365px;
   transition: 0.5s;
   cursor: pointer;
-  background-color: #0a3871;
-  color: white;
+  background-color: var(--backgroundBotao);
+  color: var(--branco)
 }
 .botoes:hover {
   font-size: 35px;
 }
 
-/*classe para ocultar os elementos*/
-.ocultar {
-  transition: all 1s;
-  display: none;
-}
 .footer img {
   cursor: pointer;
 }
 .divFooter {
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 0 0 2rem 2rem;
   font-weight: bold;
-  color: #494242;
+  color: var(--cinza)
+}
+
+.ocultar {
+  transition: all 1s;
+  display: none;
+  
 }
 @media (min-width: 425px) {
+  .botoes{
+    height: 70px;
+    width: 300px;
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 768px) {
+  .botoes {
+    font-size: 2rem;
+    width: 365px;
+  }
   .divFooter {
     justify-content: flex-start;
   }
 }
-@media (min-width: 1200px) {
-}
+
