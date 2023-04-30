@@ -1,5 +1,5 @@
 //pegando os elementos  da section com a classe inicio
-let sInicio = document.querySelector(".inicio");
+let sInicio = document.querySelector("#inicio");
 let btnComecar = document.querySelector("#comecar");
 let btnAdicionarPalavra = document.querySelector("#adicionar-palavra");
 
