@@ -21,3 +21,24 @@
     color: #495057;
     
 }
+.input-palavra-nova{
+    background: none;
+    font-size: 40px;
+    color: #0A3871;
+    border: none;
+    margin-left: 550px;
+    margin-top: 150px;
+    outline: 0;
+}
+.texto-aviso{
+    position: absolute;
+    margin-left: 530px;
+    margin-top:  350px;
+    font-size: 20px;
+    color: #495057;
+}
+.exclamacao{
+    position: absolute;
+    margin-left: 510px;
+    margin-top:  367px;
+}
