@@ -6,15 +6,21 @@
   justify-content: center;
   align-items: center;
 }
+
 .divResultado {
   text-align: center;
   width: 50%;
   height: 40%;
 }
+#novo-jogo{
+  background-color: var(--backgroundAzulEscuro);
+  color: var(--branco)
+}
 #desistir {
   background: var(--cinzaClaro);
   color: var(--cinza);
-  border-radius: 30px;
+  margin-top: 1rem;
+  
 }
 .resultado {
   font-size: 2.5rem;
@@ -31,8 +37,20 @@
 .letras-certas {
   text-transform: uppercase;
 }
-.botoes-finais {
+.botoes-finais{
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+@media (min-width:768px) {
+  .botoes-finais {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #desistir{
+    margin-top: 0;
+  }
 }

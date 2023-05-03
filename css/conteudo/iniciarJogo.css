@@ -6,10 +6,12 @@
   justify-content: center;
   align-items: center;
 }
-#adicionar-palavra{
-  border-radius: 30px;
+#comecar {
+  background-color: var(--backgroundAzulEscuro);
+  color: var(--branco);
+}
+#adicionar-palavra {
   background: var(--cinzaClaro);
   color: var(--cinza);
   margin-top: 1rem;
-  
 }
