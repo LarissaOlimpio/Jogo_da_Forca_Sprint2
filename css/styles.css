@@ -9,14 +9,16 @@
 :root{
   --font:"Open Sans", sans-serif;
   --cinza: #494242;
+  --cinzaClaro: #d8dfe8;
   --branco: white;
-  --backgroundAzul:rgb(203, 222, 243);
-  --backgroundBotao: #0a3871;
+  --backgroundAzulClaro:rgb(203, 222, 243);
+  --backgroundAzulEscuro: #0a3871;
+
 }
 body {
   width: 100vw;
   min-height: 100vh;
-  background: var(--backgroundAzul)
+  background: var(--backgroundAzulClaro)
 }
 body::-webkit-scrollbar {
   /*corpo da barra*/
@@ -33,12 +35,11 @@ body::-webkit-scrollbar {
   height: 60px;
   width: 260px;
   font-size: 1.3rem;
-  margin:  1rem 1rem 0 1rem;
   text-decoration: none;
   border-radius: 24px;
   transition: 0.5s;
   cursor: pointer;
-  background-color: var(--backgroundBotao);
+  background-color: var(--backgroundAzulEscuro);
   color: var(--branco)
 }
 .botoes:hover {

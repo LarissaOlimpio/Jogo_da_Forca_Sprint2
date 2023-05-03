@@ -1,44 +1,59 @@
-#salvar{
-    margin-top: 400px;
-    margin-left: 500px;
+.nova-palavra{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
 }
-#cancelar{
-    margin-top: 200px;
-    margin-left: 100px;
+.divInputPalavraNova{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.input-palavra-nova{
+    background: none;
+    font-size: 2.5rem;
+    color: var(--backgroundAzulEscuro);
+    border: none;
+    outline: 0;
+}
+.divAvisoQuantidadeDeLetras{
+    width: 40%;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--cinza);
+}
+.avisoQuantidadeDeLetras img{
+    width: 20px;
+    height: 20px;
+}
+.divSalvarCancelarPalavraNova{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.divBotoesSalvarCancelarPalavraNova{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+#cancelar{  
     border-radius: 30px;
-    background: #D8DFE8;
-    color: #495057;
+    background: var(--cinzaClaro);
+    color: var(--cinza);
     height: 70px;
     width: 358px;
     transition: 0.5s;
 }
 #cancelar:hover{
-    font-size: 35px;
+    font-size: 2rem;
 }
-#adicionar-palavra{
-    border-radius: 30px;
-    background: #D8DFE8;
-    color: #495057;
-    
-}
-.input-palavra-nova{
-    background: none;
-    font-size: 40px;
-    color: #0A3871;
-    border: none;
-    margin-left: 550px;
-    margin-top: 150px;
-    outline: 0;
-}
-.texto-aviso{
-    position: absolute;
-    margin-left: 530px;
-    margin-top:  350px;
-    font-size: 20px;
-    color: #495057;
-}
-.exclamacao{
-    position: absolute;
-    margin-left: 510px;
-    margin-top:  367px;
-}
+
+

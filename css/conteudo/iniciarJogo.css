@@ -6,3 +6,10 @@
   justify-content: center;
   align-items: center;
 }
+#adicionar-palavra{
+  border-radius: 30px;
+  background: var(--cinzaClaro);
+  color: var(--cinza);
+  margin-top: 1rem;
+  
+}

@@ -1,34 +1,29 @@
 .desenho-forca {
+  height: 70vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 100vw;
 }
-
 .divResultado {
   text-align: center;
   width: 50%;
-  height: 20%;
+  height: 40%;
 }
-
 #desistir {
-  background: #d8dfe8;
-  color: #495057;
+  background: var(--cinzaClaro);
+  color: var(--cinza);
   border-radius: 30px;
 }
-
 .resultado {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
-
 .letras-certas,
 .letras-erradas {
-  color: #0a3871;
-  padding: 35px;
-
-  font-size: 60px;
+  color: var(--backgroundAzulEscuro);
+  padding: 1rem;
+  font-size: 3.5rem;
   font-weight: normal;
   font-family: "Inter", sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -36,7 +31,6 @@
 .letras-certas {
   text-transform: uppercase;
 }
-
 .botoes-finais {
   display: flex;
   justify-content: space-evenly;
