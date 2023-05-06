@@ -1,15 +1,15 @@
 btnComecar.addEventListener("click", function () {
-  sInicio.classList.add("ocultar");
-  sNovaPalavra.classList.add("ocultar");
-  sDesenhoForca.classList.remove("ocultar");
-  sBotoesFinais.classList.remove("ocultar");
+  sectionInicio.classList.add("ocultar");
+  sectionNovaPalavra.classList.add("ocultar");
+  sectionDesenhoForca.classList.remove("ocultar");
+  sectionBotoesFinais.classList.remove("ocultar");
   limpaTela();
 });
 btnAdicionarPalavra.addEventListener("click", function () {
-  sInicio.classList.add("ocultar");
-  sDesenhoForca.classList.add("ocultar");
-  sBotoesFinais.classList.add("ocultar");
-  sNovaPalavra.classList.remove("ocultar");
+  sectionInicio.classList.add("ocultar");
+  sectionDesenhoForca.classList.add("ocultar");
+  sectionBotoesFinais.classList.add("ocultar");
+  sectionNovaPalavra.classList.remove("ocultar");
   inputPalavra.focus();
   document.addEventListener("keypress", function (e) {
     const letra = e.key;
@@ -28,10 +28,10 @@ btnSalvarPalavra.addEventListener("click", function () {
     alert("Digite uma palavra de até 8 letras");
   } else {
     segredo.push(valorPalavra);
-    sNovaPalavra.classList.add("ocultar");
-    sInicio.classList.add("ocultar");
-    sDesenhoForca.classList.remove("ocultar");
-    sBotoesFinais.classList.remove("ocultar");
+    sectionNovaPalavra.classList.add("ocultar");
+    sectionInicio.classList.add("ocultar");
+    sectionDesenhoForca.classList.remove("ocultar");
+    sectionBotoesFinais.classList.remove("ocultar");
   }
   limpaTela();
 });

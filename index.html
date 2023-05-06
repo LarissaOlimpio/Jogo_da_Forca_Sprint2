@@ -8,6 +8,7 @@
       name="description"
       content="Jogo da forca online e divertido para toda a família!"
     />
+    <meta name="keywords" content="jogo, jogo da forca, entreterimento, jogo educativo"/>
     <title>Jogo da forca</title>
     <link rel="shortcut icon" href="imagens/foguete.ico" type="image/x-icon" />
 
@@ -44,18 +45,18 @@
       <section class="inicio" id="inicio">
         <input id="comecar" class="botoes" type="button" value="Iniciar Jogo" />
         <input
-          id="adicionar-palavra"
+          id="adicionarPalavra"
           class="botoes"
           type="button"
           value="Adicionar nova palavra"
         />
       </section>
 
-      <section class="desenho-forca">
+      <section class="desenhoForca">
         <div class="divEspacoDesenho">
           <canvas
-            id="espaco-desenho"
-            class="espaco-desenho"
+            id="espacoDesenho"
+            class="espacoDesenho"
             width="700"
             height="350"
           ></canvas>
@@ -63,17 +64,17 @@
 
         <div class="divResultado">
           <div class="resultado"></div>
-          <div class="letras-certas"></div>
-          <div class="letras-erradas"></div>
+          <div class="letrasCertas"></div>
+          <div class="letrasErradas"></div>
         </div>
       </section>
 
-      <section class="nova-palavra">
+      <section class="novaPalavra">
         <div class="divInputPalavraNova">
           <input
             type="text"
-            id="input-palavra"
-            class="input-palavra-nova"
+            id="inputPalavra"
+            class="inputPalavraNova"
             autocomplete="off"
             placeholder="Digite uma palavra"
           />
@@ -86,7 +87,7 @@
               alt="ponto de exclamação"
               class="exclamacao"
             />
-            <label id="aviso" class="texto-aviso" for="text">Máx. 8 letras</label>
+            <label id="aviso" class="textoAviso" for="text">Máx. 8 letras</label>
           </div >
           <div class="divBotoesSalvarCancelarPalavraNova">
             <input
@@ -100,8 +101,8 @@
         </div>
       </section>
 
-      <section class="botoes-finais">
-        <input type="button" id="novo-jogo" class="botoes" value="Novo Jogo" />
+      <section class="botoesFinais">
+        <input type="button" id="novoJogo" class="botoes" value="Novo Jogo" />
         <input id="desistir" class="botoes" type="button" value="Desistir" />
       </section>
     </main>

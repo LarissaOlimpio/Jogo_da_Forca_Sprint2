@@ -10,7 +10,7 @@
   background-color: var(--backgroundAzulEscuro);
   color: var(--branco);
 }
-#adicionar-palavra {
+#adicionarPalavra {
   background: var(--cinzaClaro);
   color: var(--cinza);
   margin-top: 1rem;

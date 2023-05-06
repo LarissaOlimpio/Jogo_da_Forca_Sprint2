@@ -1,26 +1,26 @@
 //pegando os elementos  da section com a classe inicio
-let sInicio = document.querySelector("#inicio");
+let sectionInicio = document.querySelector("#inicio");
 let btnComecar = document.querySelector("#comecar");
-let btnAdicionarPalavra = document.querySelector("#adicionar-palavra");
+let btnAdicionarPalavra = document.querySelector("#adicionarPalavra");
 
 //pegando do HTML os elementos da section com a classe desenho-forca para a lógica do jogo//
-let sDesenhoForca = document.querySelector(".desenho-forca");
+let sectionDesenhoForca = document.querySelector(".desenhoForca");
 let tela = document.querySelector("canvas");
 let pincel = tela.getContext("2d");
-let divLetraCerta = document.querySelector(".letras-certas");
+let divLetraCerta = document.querySelector(".letrasCertas");
 let divtracinho = document.querySelector(".tracinho");
-let divLetraErrada = document.querySelector(".letras-erradas");
+let divLetraErrada = document.querySelector(".letrasErradas");
 let resultadoJogo = document.querySelector(".resultado");
 
 //pegando os elementos da section com a classe nova-palavra
-let sNovaPalavra = document.querySelector(".nova-palavra");
-let inputPalavra = document.querySelector(".input-palavra-nova");
+let sectionNovaPalavra = document.querySelector(".novaPalavra");
+let inputPalavra = document.querySelector(".inputPalavraNova");
 let btnSalvarPalavra = document.querySelector("#salvar");
 let btnCancelar = document.querySelector("#cancelar");
 let valorPalavra = "";
 //pegando os elementos da section com a classe botões-finais
-let sBotoesFinais = document.querySelector(".botoes-finais");
-let btnReiniciar = document.querySelector("#novo-jogo");
+let sectionBotoesFinais = document.querySelector(".botoesFinais");
+let btnReiniciar = document.querySelector("#novoJogo");
 let btnDesistir = document.querySelector("#desistir");
 
 //sorteando a palavra secreta
@@ -45,9 +45,9 @@ let total = palavraSecreta.split("");
 total = total.length;
 let mensagem = "";
 
-sDesenhoForca.classList.add("ocultar");
-sNovaPalavra.classList.add("ocultar");
-sBotoesFinais.classList.add("ocultar");
+sectionDesenhoForca.classList.add("ocultar");
+sectionNovaPalavra.classList.add("ocultar");
+sectionBotoesFinais.classList.add("ocultar");
 
 document.addEventListener(
   "keypress",

@@ -1,4 +1,4 @@
-.nova-palavra {
+.novaPalavra {
   height: 80vh;
   width: 100vw;
   display: flex;
@@ -11,7 +11,7 @@
   justify-content: flex-start;
   width: 50%;
 }
-.input-palavra-nova {
+.inputPalavraNova {
   background: none;
   font-size: 2.5rem;
   color: var(--backgroundAzulEscuro);
