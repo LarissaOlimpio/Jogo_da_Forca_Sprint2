@@ -14,7 +14,7 @@ let resultadoJogo = document.querySelector(".resultado");
 
 //pegando os elementos da section com a classe nova-palavra
 let sectionNovaPalavra = document.querySelector(".novaPalavra");
-let inputPalavra = document.querySelector(".inputPalavraNova");
+let inputPalavra = document.querySelector(".textAreaPalavraNova");
 let btnSalvarPalavra = document.querySelector("#salvar");
 let btnCancelar = document.querySelector("#cancelar");
 let valorPalavra = "";

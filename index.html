@@ -8,7 +8,10 @@
       name="description"
       content="Jogo da forca online e divertido para toda a família!"
     />
-    <meta name="keywords" content="jogo, jogo da forca, entreterimento, jogo educativo"/>
+    <meta
+      name="keywords"
+      content="jogo, jogo da forca, entreterimento, jogo educativo"
+    />
     <title>Jogo da forca</title>
     <link rel="shortcut icon" href="imagens/foguete.ico" type="image/x-icon" />
 
@@ -70,16 +73,17 @@
       </section>
 
       <section class="novaPalavra">
-        <div class="divInputPalavraNova">
-          <input
-            type="text"
-            id="inputPalavra"
-            class="inputPalavraNova"
-            autocomplete="off"
+        <div class="divTextAreaPalavraNova">
+          <textarea
+            name="textAreaPalavra"
+            id="textAreaPalavra"
+            class="textAreaPalavraNova"
+            cols="30"
+            rows="3"
             placeholder="Digite uma palavra"
-          />
+          ></textarea>
         </div>
-        
+
         <div class="divSalvarCancelarPalavraNova">
           <div class="divAvisoQuantidadeDeLetras">
             <img
@@ -87,8 +91,10 @@
               alt="ponto de exclamação"
               class="exclamacao"
             />
-            <label id="aviso" class="textoAviso" for="text">Máx. 8 letras</label>
-          </div >
+            <label id="aviso" class="textoAviso" for="text"
+              >Máx. 8 letras</label
+            >
+          </div>
           <div class="divBotoesSalvarCancelarPalavraNova">
             <input
               type="button"
@@ -96,7 +102,12 @@
               class="botoes"
               value="Salvar e Começar"
             />
-            <input type="button" id="cancelar" class="botoes" value="Cancelar" />
+            <input
+              type="button"
+              id="cancelar"
+              class="botoes"
+              value="Cancelar"
+            />
           </div>
         </div>
       </section>
