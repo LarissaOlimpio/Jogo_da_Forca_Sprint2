@@ -1,55 +1,90 @@
 .desenhoForca {
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.divEspacoDesenho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.espacoDesenho {
+  width: 80%;
+}
 .divResultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 100%;
   height: 40%;
 }
-#novoJogo{
+#novoJogo {
   background-color: var(--backgroundAzulEscuro);
-  color: var(--branco)
+  color: var(--branco);
 }
 #desistir {
   background: var(--cinzaClaro);
   color: var(--cinza);
   margin-top: 1rem;
-  
 }
 .resultado {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .letrasCertas,
 .letrasErradas {
   color: var(--backgroundAzulEscuro);
   padding: 1rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: normal;
   font-family: "Inter", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
-.letrasCertas{
+.letrasCertas {
   text-transform: uppercase;
 }
-.botoesFinais{
+.botoesFinais {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-@media (min-width:768px) {
+@media (min-width: 425px) {
+  .resultado {
+    font-size: 2rem;
+  }
+  .letrasCertas,
+  .letrasErradas {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .desenhoForca {
+    height: 70vh;
+  }
+  .espacoDesenho {
+    width: 100%;
+  }
+  .divResultado{
+    padding-top: 3rem;
+  }
+  .resultado {
+    font-size: 2.5rem;
+  }
+  .letrasCertas,
+  .letrasErradas {
+    font-size: 3.5rem;
+  }
   .botoesFinais {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  #desistir{
+  #desistir {
     margin-top: 0;
   }
 }
