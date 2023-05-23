@@ -3,6 +3,7 @@ btnComecar.addEventListener("click", function () {
   sectionNovaPalavra.classList.add("ocultar");
   sectionDesenhoForca.classList.remove("ocultar");
   sectionBotoesFinais.classList.remove("ocultar");
+  inputCelular.focus();
   limpaTela();
 });
 btnAdicionarPalavra.addEventListener("click", function () {

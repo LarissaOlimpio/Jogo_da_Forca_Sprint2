@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 .divFooter {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,5 +73,6 @@ body::-webkit-scrollbar {
   }
   .divFooter {
     justify-content: flex-start;
+    font-size: 1.5rem;
   }
 }

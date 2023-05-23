@@ -11,6 +11,7 @@ let divLetraCerta = document.querySelector(".letrasCertas");
 let divtracinho = document.querySelector(".tracinho");
 let divLetraErrada = document.querySelector(".letrasErradas");
 let resultadoJogo = document.querySelector(".resultado");
+let inputCelular = document.querySelector(".inputCelular");
 
 //pegando os elementos da section com a classe nova-palavra
 let sectionNovaPalavra = document.querySelector(".novaPalavra");
@@ -48,6 +49,7 @@ let mensagem = "";
 sectionDesenhoForca.classList.add("ocultar");
 sectionNovaPalavra.classList.add("ocultar");
 sectionBotoesFinais.classList.add("ocultar");
+
 
 document.addEventListener(
   "keypress",
