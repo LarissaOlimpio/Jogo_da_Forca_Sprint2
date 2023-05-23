@@ -5,7 +5,7 @@
  Este projeto é o segundo Challenge da trilha iniciante em programação do Projeto One Next Education, Alura em parceria com a Oracle.
  Nesta etapa desenvolvi este jogo de forma divertida e dinâmico, onde o jogador pode iniciar o jogo, desistir, iniciar novo jogo, além de poder adicionar palavras novas para serem incluídas e sorteadas dentro da lista ja pré definida no jogo.
  Conforme o jogador acerta as letras, a palavra vai se formando na tela, e conforme são digitadas letras que não contém na palavra, um bonequinho vai ser formado ao lado, ao totalizar seis letras erradas completa o desenho do boneco e aparece Game Over, se acertar as letras antes de completar o desenho, então aparecerá: Parabéns, você venceu!
- Até o momento o projeto não esta responsivo, porém agora que possuo um bom conhecimento na área do FrontEnd estou refatorando para entregar uma melhor experiência para o usuário. Em breve novas atualizações.
+ Até o momento o projeto não esta adaptado para celular, embora esteja responsivo, estou trabalhando para que o usuário possa interagir com o jogo pois para a versão web usei o evento "keypress" para capturar as teclas digitadas pelos usuários porém agora para mobile preciso fazer alterações. Em breve novas atualizações.
 
 > Processo de refatoração
 
